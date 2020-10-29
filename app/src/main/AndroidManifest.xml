@@ -6,6 +6,17 @@
         <uses-library android:name="com.google.android.things" />
 
         <activity android:name=".MainActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.IOT_LAUNCHER" /> <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".MainActivityUART">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,6 +27,7 @@
                 <category android:name="android.intent.category.IOT_LAUNCHER" /> <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-    </application>
 
+    </application>
+    <uses-permission android:name="com.google.android.things.permission.USE_PERIPHERAL_IO"/>
 </manifest>
