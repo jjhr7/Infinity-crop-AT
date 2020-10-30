@@ -36,7 +36,7 @@ public class ArduinoUart extends Activity {
     public String leer() {
         String s = "";
         int len;
-        final int maxCount = 8; // Máximo de datos leídos cada vez
+        final int maxCount = 5000; // Máximo de datos leídos cada vez
         byte[] buffer = new byte[maxCount];
         try {
             do {
